@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_margin="10dp"
+    android:background="#9fa777"
+
+    android:layout_height="match_parent"
+    >
+    <TextView
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:id="@+id/magn"
+        android:textSize="15sp"
+        android:background="@drawable/magnitude_circle"
+        android:textAlignment="center"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:textColor="#fff"
+
+
+        />
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/disnear"
+
+            android:textSize="12sp"
+            android:layout_weight="2"
+            android:textColor="#00071f"
+
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/palce"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#00071f"
+            android:layout_weight="2"
+
+            />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="3dp"
+
+        android:layout_weight="1">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/date"
+            android:paddingTop="5dp"
+            android:textColor="#000715"
+            android:layout_weight="2"
+        />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/time"
+            android:paddingBottom="10dp"
+            android:textSize="14sp"
+            android:textColor="#000715"
+            android:layout_weight="2"
+            android:layout_below="@id/date"
+
+        />
+    </RelativeLayout>
+
+</LinearLayout>
